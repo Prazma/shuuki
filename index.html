@@ -195,7 +195,7 @@
 			<button id="88" class="gens">Lv</button>
 			<button id="89" class="gens">Uus</button>
 			<button id="90" class="gens">Uuo</button><br>
-			<button class="ovbtn" onmouseover="alkshow()" onmouseout="alknorm()" data-toggle="tooltip" title="クリックして情報を表示">アルカリ金属<br>Alkali Metals</button>
+			<button class="ovbtn" onmouseover="alkshow()" data-toggle="modal" data-target="#alkmod" onmouseout="alknorm()" data-toggle="tooltip" title="クリックして情報を表示">アルカリ金属<br>Alkali Metals</button>
 			<script>
 				function alkshow() {
 					document.getElementById("3").style.background = "#633800";
@@ -232,5 +232,23 @@
 				});
 			</script>
 		</div>
+		<div class="modal fade" id="alkmod" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">アルカリ金属</h4>
+				</div>
+					<div class="modal-body">
+						<p>第１族のうちの、水素を除く６個の元素。金属なのに柔らかく、リチウム、ナトリウムはナイフで切断できる。密度が小さいので水に浮くものも。酸化しやすく、表面はすぐに光沢を失ってしまう。</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
+
